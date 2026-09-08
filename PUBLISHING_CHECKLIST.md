@@ -1,6 +1,14 @@
 # V15 publishing checklist
 
-The domain is already owned; connect it later. No hosting or DNS changes were made during this work.
+2026-09-08: favicon files and the custom Hungarian/English error pages are ready locally. Upload `404.html` at the publishing root alongside `index.html`, plus `404-en.html`, `error.css`, the new brand assets, `favicon.ico` and updated shared files. GitHub Pages uses that root error page for missing paths: [GitHub instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site). Verify a deliberately missing nested address after upload. The 404 URL base is `/`, matching the owner's custom-domain setup. Favicon caches may require a refresh. No live deployment was performed here.
+
+English site update (2026-09-07): local V15 now has eighteen public pages (nine language pairs), plus `language.css` and `language.js`. Upload the updated shared script and all HTML/CSS/JS together. Translation/routing checks run locally; confirm the selector and longer English headings on real phones after upload. Review Calendly's own event names and questions in the Calendly account if English visitors need those translated too.
+
+Owner update, 2026-09-05: the domain is connected and the site is online. The owner reports booking checks work. Leave the Calendly colour issue for now; content/legal material and favicon/sharing/sitemap work are upcoming. Current work is bugfixes in V15. Hosting and DNS were handled by the owner; the public URL and upload workflow are not yet recorded here.
+
+Terms update: Hungarian and English pages are now prepared and linked from the footer, but remain **review drafts**. [LEGAL_REVIEW.md](LEGAL_REVIEW.md) records the supplied business details, missing registration/phone/refund decisions, privacy notice and electronic withdrawal-process requirements. The owner identified GitHub as the host. Adding terms does not complete all compliance work; do not present the draft as legally approved or already effective.
+
+The checklist below is retained as a reference, subject to that status update. The iPhone Brave heading/menu correction is prepared locally; upload all eight updated HTML pages with `styles.css` and `responsive.css`, then recheck on the affected phone. No live deployment or physical-device verification was performed by the assistant for this fix.
 
 ## Finish before opening the site to clients
 

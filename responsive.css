@@ -1,6 +1,33 @@
 /* Device refinements. Keep this after the shared layout and section navigation. */
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 img { max-width: 100%; }
+/* Solid foregrounds avoid gradient-text failures and automatic night-mode
+   background recolouring on phones/tablets, including iOS browsers. */
+@media (max-width: 1180px), (hover: none) {
+  .hero h1 em, .page-hero h1 em, .training-title em,
+  .story-year, .metric-number {
+    background: none;
+    color: var(--gold-pale);
+    -webkit-text-fill-color: currentColor;
+  }
+}
+/* Keep the same readable fallback if text clipping is unavailable. */
+@supports not ((background-clip: text) or (-webkit-background-clip: text)) {
+  .hero h1 em, .page-hero h1 em, .training-title em,
+  .story-year, .metric-number {
+    background: none;
+    color: var(--gold-pale);
+    -webkit-text-fill-color: currentColor;
+  }
+}
+@media (forced-colors: active) {
+  .hero h1 em, .page-hero h1 em, .training-title em,
+  .story-year, .metric-number {
+    background: none;
+    color: CanvasText;
+    -webkit-text-fill-color: currentColor;
+  }
+}
 .btn { max-width: 100%; white-space: normal; line-height: 1.4; padding-block: 12px; text-align: center; }
 .btn svg, .hamburger, .contact-availability i { flex-shrink: 0; }
 .nav-cta { min-height: 44px; height: auto; padding-block: 10px; }

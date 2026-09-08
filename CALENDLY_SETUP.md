@@ -1,5 +1,9 @@
 # Calendly setup for V15
 
+## English website (2026-09-07)
+
+`contact-en.html` uses the same confirmed event URLs and preserved dark/gold widget configuration. Website instructions, booking notes and fallback messages are English; name prefill uses first name then surname. No Calendly account settings were changed. Calendly controls its own booking-view language and notifications, and custom event names/descriptions/questions need manual translations in that account: [Calendly's event-language instructions](https://calendly.com/help/how-to-change-your-event-type-language). If separate English events are created later, record their confirmed URLs here and add language-specific routing without disturbing existing Hungarian bookings.
+
 V15 started from the V14 integration and now includes the automatic-prefill fix described below. Configure `V15/site-config.js` for this version. The observations below were verified on 2026-09-05; they are not a live account-status check. See [README.md](README.md) for local tests and [PROJECT_NOTES.md](PROJECT_NOTES.md) for approved packages.
 
 ## Live client-management account

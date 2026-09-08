@@ -1,0 +1,7 @@
+.error-content { min-height: 65vh; max-width: 850px; margin: 0 auto; padding: clamp(56px,8vw,112px) 24px; text-align: center; }
+.error-code { margin: 0 0 20px; font: 800 clamp(7rem,22vw,13rem)/.9 "Barlow Condensed",sans-serif; letter-spacing: -.03em; color: var(--gold); }
+.error-content h1 { margin-bottom: 24px; font: 800 clamp(2.3rem,6vw,4rem)/1.05 "Barlow Condensed",sans-serif; }
+.error-description { max-width: 44ch; margin: 0 auto 12px; color: var(--muted); }
+.error-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 32px 0 20px; }
+.error-contact { display: inline-block; padding: 12px 0; color: var(--gold-pale); }
+@media (max-width: 500px) { .error-actions { flex-direction: column; } }

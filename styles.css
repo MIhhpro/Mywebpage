@@ -1,6 +1,7 @@
 /* ─── Tokens ─────────────────────────────────────────────── */
 :root {
   color-scheme: dark;
+  color-scheme: only dark;
   --ink:          #f5f0e8;
   --muted:        #b8ae9e;
   --soft:         #aaa091;
@@ -160,13 +161,16 @@ body::before {
   width: 48px; height: 48px; /* Touch target: min 44px */
   border: 1px solid var(--line); border-radius: 50%;
   background: var(--panel);
+  color: var(--ink);
+  -webkit-appearance: none;
+  appearance: none;
   padding: 0;
   transition: background 220ms cubic-bezier(0.4, 0, 0.2, 1), border-color 220ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hamburger:active { background: rgba(255, 242, 200, 0.12); border-color: rgba(245, 200, 66, 0.4); }
 .hamburger span {
   display: block; width: 18px; height: 1.5px;
-  background: var(--ink); margin: 0 auto;
+  background: none; border-top: 1.5px solid currentColor; margin: 0 auto;
   transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
@@ -2379,6 +2383,9 @@ i[data-lucide] { display: inline-flex; width: 1em; height: 1em; flex-shrink: 0; 
 [hidden] { display: none !important; }
 :focus-visible { outline: 2px solid var(--gold-pale); outline-offset: 5px; }
 main:focus { outline: none; }
+/* In-page links focus their destination for keyboard reading. A full-width
+   section outline can show up as a stray gold seam at its top or bottom. */
+main > section[tabindex="-1"]:focus { outline: none; }
 section[id] { scroll-margin-top: 110px; }
 main :is(h1, h2, h3)[id] { scroll-margin-top: 110px; }
 .skip-link { position: fixed; top: -100px; left: 20px; z-index: 100; padding: 12px 20px; background: var(--gold-pale); color: var(--night); border-radius: var(--radius); font-weight: 700; }

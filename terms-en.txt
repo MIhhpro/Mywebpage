@@ -1,0 +1,209 @@
+Terms of Service
+2026-09-05-draft-1
+Review draft — not yet in force
+This version contains points still to be finalised and must not be used as the final contracting terms. You will receive the final terms before entering into a paid agreement.
+
+1. Provider and contact details
+
+Legal name
+Mihály Bence Egyéni Vállalkozó (sole trader)
+Registered office and postal address
+2370 Dabas, Toldi Miklós utca 46., Hungary
+Hungarian tax number
+91565958-1-33
+Registration authority
+National Tax and Customs Administration of Hungary (NAV), register of sole traders
+Contact and complaints
+mihaly.bence.fitness@gmail.com — this address can be used from any email service.
+Personal training location
+Victory Fitness Békásmegyer, 1039 Budapest, Hatvany Lajos utca 10., Hungary. The gym is not the business's registered office.
+Website hosting
+GitHub Pages. GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA. GitHub support; privacy contact: dpo@github.com. GitHub's EEA privacy contact: GitHub B.V., Prins Bernhardplein 200, 1097JB Amsterdam, Netherlands.
+GitHub support: https://support.github.com/
+
+Below, “Provider” or “Bence” means the sole trader, and “Client” means the person using the service. The sole-trader registration number and business telephone number must be added before finalisation; the tax number does not replace the registration number.
+
+
+2. Scope of these terms
+
+These terms describe the framework for personal training, online coaching and the standalone training programme. The individual offer identifies the selected service and its details. Neither these terms nor an individual agreement may restrict mandatory consumer rights.
+
+The website is for enquiries and appointment scheduling. It has no online payment or automatic ordering process that creates an obligation to pay. Submitting the form or selecting a Calendly appointment does not, by itself, create a paid training contract or a cancellation charge.
+
+Under the intended process, online contracting is used for online coaching. Gym clients sign a separate paper training agreement by hand, in person, before training begins and receive a copy. The website does not replace that agreement.
+
+The standalone Training Program is available through a separate offer. If it or any other service is actually sold through a distance agreement, such as an email exchange, the applicable distance-contract rules still apply. Legal classification depends on how the contract is actually concluded; a later paper signature or the payment method does not override this.
+
+A minor may participate only with the involvement of their legal representative required by law and with suitable, age-appropriate arrangements agreed in advance.
+
+
+3. How an agreement is concluded
+
+- We first discuss the Client's goals, availability and a suitable service. The free consultation does not require a purchase.
+- Before the Client accepts a paid service, Bence provides an individual offer stating the total fee, service content, start date, duration, payment method and deadline, call or session length, communication channel, cancellation terms and any additional costs.
+- For online coaching, the Client receives the offer, a saveable copy of the applicable terms, consumer information and a model withdrawal notice by email. The contract is concluded when the Client's express acceptance of a clear offer reaches Bence. Acceptance must clearly indicate the order for a paid service. Silence or an appointment booking is not treated as acceptance.
+- Bence confirms the agreement by email and provides its saveable content no later than the start of performance. He personally issues the invoice or receipt in accordance with applicable invoicing and reporting duties.
+
+The Client can correct their details and clarify the offer by email before accepting. Communication is in Hungarian or, by prior agreement, English. Correspondence and confirmation are retained, and the Client can save their own copy; the website does not provide a contract archive or client account. Whether an email exchange satisfies a legal written-form requirement depends on the applicable law.
+
+
+4. Services and fees
+
+- Free consultation: an introductory conversation at no charge.
+- Personal training: 11 000 Ft per session; ten-session package: 100 000 Ft.
+- Training Program: a one-off fee of 19 900 Ft. A personalised four-week programme, exercise selection, sets, repetitions, repetitions in reserve (RIR), progression and exercise substitutions.
+- Online Coaching – Basic: 29 900 Ft per month. Training programme, one coaching call per week and programme adjustments.
+- Online Coaching – Plus: 39 900 Ft per month. Training programme, two coaching calls per week and programme adjustments.
+- Online Coaching – Premium: 49 900 Ft per month. Training programme, two calls per week, unlimited messaging, video/form checks and ongoing adjustments.
+
+Amounts are total consumer prices in Hungarian forints. No extra fee is charged without prior information and express agreement. Any separate gym admission charge is clarified before the contract is concluded.
+
+The individual offer specifies session and call lengths, the validity of the ten-session package, programme delivery deadline and format, and the extent of revisions. Online services require an appropriate internet connection and a device supporting the agreed call, messaging and file formats; specific requirements are disclosed before acceptance.
+
+The start and end dates of each monthly coaching period are agreed in advance. A further paid period requires express agreement; there is no automatic charge or renewal based solely on silence. A price change does not retrospectively change an already agreed period's fee.
+
+
+5. Payment and receipts
+
+Payment takes place outside the website using the method and deadline disclosed in the individual offer. The website does not request card details, collect payments or automatically issue invoices or receipts.
+
+Bence requests the billing details required by law directly. Clients should not send card details, passwords or unnecessary financial information through messages. Invoices, receipts and associated records are subject to applicable tax and retention requirements.
+
+If payment is overdue, Bence first contacts the Client and gives a reasonable opportunity to pay. Any suspension of services not yet started or termination is communicated in writing, with an accounting of services performed and fees for unused services.
+
+
+6. Cancelling or changing appointments
+
+The 24-hour rule applies only to appointments booked under an existing paid contract. Cancelling the free consultation is free of charge. Deadlines are measured in elapsed hours using the time zone shown in the booking confirmation.
+
+The Client may cancel through the cancellation option in the confirmation email, the agreed messaging channel or the Provider's email address. The time of notification counts; the Client does not need to wait for Bence's reply.
+
+If the Client cancels less than 24 hours before the appointment, the fee agreed in advance for that appointment is normally non-refundable. For a ten-session personal training package, one session is used. Cancelling one online coaching call does not automatically forfeit the entire monthly package: at most, the affected, previously identified call is not replaced; no new penalty fee is added.
+
+The arrangements for cancellations at least 24 hours in advance and rescheduling must be clarified before this draft is finalised. Bence may make exceptions in the Client's favour where circumstances justify them.
+
+If Bence cancels, the Client may choose a replacement appointment or a refund for the affected, unperformed session. A session missed due to Bence cannot be deducted from a package.
+
+This rule does not restrict statutory withdrawal or termination rights, remedies for defective performance, or the 24-hour reply guarantee. It cannot justify an unfair or disproportionate charge.
+
+
+7. Messaging and reply guarantee
+
+Bence provides a substantive reply within 24 hours to service-related client messages requiring an answer, on the agreed contact channel. This means elapsed hours from receipt, including weekends and public holidays. An automatic acknowledgement alone is not a substantive reply. A later message does not restart the deadline for an earlier unanswered question.
+
+Unlimited messaging in Premium refers to the number of messages, not continuous, immediate or emergency availability. Basic and Plus do not automatically include unlimited coaching by message, but replies to questions about the agreement and its administration remain available.
+
+If Bence misses the 24-hour deadline, the Client is entitled to a refund. The precise financial amount of this guarantee is still being agreed, so this draft is not a final offer. A claim may be made to the Provider's email address, identifying the affected message. The Client does not need to resend their entire private conversation. A valid refund is paid without undue delay and no later than 14 days. This guarantee does not replace statutory remedies.
+
+Respectful communication is expected. Bence considers the context of an isolated angry or profane expression; it does not automatically lead to exclusion or loss of payment. Harassment, threats, hate speech and repeated personal abuse are unacceptable. Normally, a warning and opportunity to resolve the situation come first. A serious threat may justify immediate suspension, with written reasons and a fair accounting of unused fees. A complaint, criticism or refund request is not itself misconduct.
+
+
+8. Confidentiality and personal data
+
+Private conversations and client information are confidential. This includes names, facial and other photographs, addresses, contact details, workplaces, information about health and physical condition, training videos and message content.
+
+Bence does not publish, sell or use this material for advertising, client stories or social media without the Client's separate, specific and voluntary request or appropriate consent. Taking part in coaching does not authorise publication of photographs or conversations. Refusal of such use does not disadvantage the Client.
+
+Confidentiality continues after the contract ends. It does not restrict the Client's rights, including access to their own data or lawful pursuit of a claim.
+
+Technical providers necessary for the service, such as Calendly, email and the agreed communication provider, may process data needed for their role under an appropriate legal basis and data-protection safeguards. Website hosting is not, by itself, a client chat archive. Billing-related disclosures must also be limited to their purpose.
+
+Disclosure may be required by law or a binding court or authority order; a search warrant is not required in every case. Data may also be processed where lawful, necessary and proportionate to establish, exercise or defend legal claims. Bence checks the legal basis of a request, discloses only what is necessary, and informs the Client where legally permitted.
+
+Health information is special-category personal data. Its processing requires both a general GDPR legal basis and an Article 9 condition, such as separate explicit consent where appropriate. Accepting these terms does not replace this requirement. Medical records and detailed health information should not be entered in the public enquiry form.
+
+This confidentiality section is not a complete privacy notice. Separate information about purposes, legal bases, retention, providers, any international transfers and individual rights must be supplied before data collection. That separate notice remains to be completed at the time of this draft.
+
+
+9. Safety, cooperation and responsibility
+
+The service is fitness coaching and training planning, not medical diagnosis, treatment or physiotherapy. Bence provides the agreed service with care appropriate to his qualifications. A particular physique, weight loss or performance result cannot be guaranteed.
+
+Through the agreed, appropriately protected channel, the Client communicates circumstances and changes necessary for safe exercise, follows reasonable coaching instructions and complies with gym rules. Exercise must stop if pain, illness or injury occurs, with appropriate medical help sought when needed. Messaging is not an emergency service.
+
+The Client's duty to cooperate does not excuse Bence's own failings. Liability for intentional breach, harm to life, physical integrity or health, or other liability that cannot lawfully be excluded is not excluded.
+
+For defective or missing performance, the Client may seek correction, performance, a price reduction, termination and an appropriate refund under the applicable rules, and exercise other statutory remedies. Mandatory conformity rules also apply where digital content or a digital service is supplied.
+
+Supplied programmes are for personal use. Resale or public distribution requires separate permission; this does not restrict the Client's use of their own data, mandatory rights or necessary professional or legal advice.
+
+
+10. Consumer withdrawal and termination
+
+For a distance service contract, a consumer normally has 14 days from conclusion of the contract to withdraw without giving a reason. If performance has already begun at the consumer's express request, they may terminate without giving a reason within the remaining period. Failure to provide withdrawal information may extend the statutory deadline.
+
+Starting within the 14-day period requires a separate express request; it is not inferred from accepting these terms or booking a slot. The Client must acknowledge that the right is lost once the service has been fully performed. For partial performance, a proportionate fee for services actually supplied may be charged only where the necessary information and request for early performance exist. Otherwise, the statutory exemption from those costs applies.
+
+Early supply of digital content has separate conditions for loss of the right: prior express consent, express acknowledgement of that loss, and the required confirmation. A personalised programme or delivery of a file does not automatically remove withdrawal rights. The digital-download exception is not automatically applied to an entire coaching service.
+
+To meet the deadline, it is sufficient to send a clear withdrawal or termination notice before it expires. The model below is optional. Notice may be sent by email or post using the contact details in section 1. Keeping evidence of sending is recommended. Receipt of the notice is acknowledged without undue delay.
+
+Any amount due is refunded no later than 14 days after notice of withdrawal is received, normally using the original payment method. A different method requires the Client's express agreement and must not create extra costs for them. Any lawful proportionate performance charge is transparently accounted for.
+
+Online withdrawal function: where applicable, the electronic withdrawal function required by section 22 of Hungarian Government Decree 45/2014 must be provided in the contracting process. The current website's email-draft and Calendly cancellation options are not that function. The necessary function and durable acknowledgement remain to be implemented, which is why this document is a review draft.
+
+A training agreement concluded in person at the Provider's usual business premises does not automatically carry the 14-day distance-contract right. Off-premises or actual distance agreements remain subject to their applicable rules. The exception for leisure services on specific dates is not used as a blanket exclusion covering every package.
+
+
+11. Duration and ending the relationship
+
+The contract covers the agreed period or number of sessions. Further periods are agreed separately. A pause or early end by mutual agreement can be requested; any fee settlement is recorded in writing.
+
+Statutory termination and other remedies remain available in the event of breach. Ending contact or blocking a chat does not remove the Provider's refund, complaint-handling or data-protection duties; email and postal contact remain available.
+
+If the service cannot be performed on an ongoing basis, fees for the unperformed portion must be accounted for. An external outage or illness does not by itself justify retaining the entire unearned fee. Mandatory consumer rights remain in place.
+
+
+12. Complaints and dispute resolution
+
+Complaints may be sent to mihaly.bence.fitness@gmail.com or by post to 2370 Dabas, Toldi Miklós utca 46., Hungary. Please briefly identify the service, the issue and how to contact you. Complaint handling is free.
+
+Oral complaints are examined immediately and resolved where possible. If this is not possible or the Client disagrees, the required record and information are provided. Written complaints receive a substantive, verifiable written response within 30 days. Rejections include reasons and contact details for the remedies available in the case. This statutory complaint-handling deadline does not override the faster client-response commitment in section 7.
+
+After trying to resolve the matter directly, a consumer may initiate free proceedings before a Hungarian conciliation board. Competence normally follows the consumer's residence or place of stay, without restricting statutory choices. The Provider fulfils the legal duty to cooperate.
+
+Board for the Provider's registered office: Pest Vármegyei Békéltető Testület (Pest County Conciliation Board); 1055 Budapest, Balassi Bálint utca 25., 4th floor, door 2; postal address: 1364 Budapest, PO Box 81, Hungary; telephone: +36 1 792 7881; email: pmbekelteto@pmkik.hu; panaszrendezes.hu. Other competent boards are listed by the Hungarian Chamber of Commerce and Industry.
+panaszrendezes.hu: https://www.panaszrendezes.hu/
+Hungarian Chamber of Commerce and Industry: https://mkik.hu/a-bekelteto-testuletek-teruleti-honlapjai
+
+The consumer may also contact the competent consumer-protection authority or court. Conciliation does not remove the right to court proceedings. Privacy concerns may be raised with the competent supervisory authority, including Hungary's National Authority for Data Protection and Freedom of Information (NAIH).
+National Authority for Data Protection and Freedom of Information (NAIH): https://www.naih.hu/
+
+
+13. Language, applicable law and changes
+
+These terms are available in Hungarian and English. The parties identify the contract language. The English version aims to provide equivalent information; a discrepancy cannot be used to undermine mandatory consumer rights or promises clearly communicated to the Client. Unclear consumer terms are subject to the interpretation rules protecting consumers.
+
+Hungarian law governs the contract. This choice does not deprive a consumer of protections under the law of their habitual residence that cannot be excluded under the applicable private-international-law rules. No exclusive court is imposed to remove the consumer's lawful options.
+
+The confirmation identifies the accepted version of the terms. Later website changes do not automatically amend an existing agreement or retrospectively reduce the Client's rights.
+
+Key legislation: Hungarian Act V of 2013 (Civil Code); Act CVIII of 2001; Act CLV of 1997; Government Decree 45/2014; Government Decree 373/2021 where applicable to digital performance; and Regulation (EU) 2016/679 (GDPR).
+Hungarian Act V of 2013 (Civil Code): https://njt.jog.gov.hu/jogszabaly/2013-5-00-00
+Act CVIII of 2001: https://njt.jog.gov.hu/jogszabaly/2001-108-00-00
+Act CLV of 1997: https://njt.jog.gov.hu/jogszabaly/1997-155-00-00
+Government Decree 45/2014: https://njt.jog.gov.hu/jogszabaly/2014-45-20-22
+Government Decree 373/2021: https://njt.jog.gov.hu/jogszabaly/2021-373-20-22
+Regulation (EU) 2016/679 (GDPR): https://eur-lex.europa.eu/eli/reg/2016/679/oj
+
+
+14. Model withdrawal / termination notice
+
+Complete and send this only if you wish to withdraw from the contract or exercise your right to terminate without giving a reason. Any other clear notice is also acceptable. Saving or printing the template does not send a message.
+
+To: Mihály Bence Egyéni Vállalkozó
+2370 Dabas, Toldi Miklós utca 46., Hungary
+Email: mihaly.bence.fitness@gmail.com
+
+I hereby notify you that I exercise my right of withdrawal / termination in respect of my contract for the following service.
+
+Service / package and contract identifier:
+Date of contract:
+Consumer's name:
+Consumer's address:
+Email address for acknowledgement:
+Date:
+Signature (only for a paper notice):
+
+Send the notice to the email or postal address above. Lawful exercise of withdrawal rights cannot be made conditional on having an invoice number or using this template.
+

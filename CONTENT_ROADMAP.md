@@ -4,7 +4,7 @@ V15 is the active version as of 2026-09-05. This is a backlog for future owner-a
 
 ## Completed baseline — do not redo
 
-- Eight complete pages with Hungarian copy, the established bronze/copper/gold/black palette and consistent approved pricing.
+- Eight complete pages in Hungarian and English, the established bronze/copper/gold/black palette and consistent approved pricing. Every header has HU/EN flags, including both legal drafts.
 - Galéria consolidated into Rólam, including `shirtless.png`, the three life photos and three intentional photo placeholders. No separate Life page.
 - Sikerek restored to primary navigation on every page and linked from the homepage.
 - Responsive section navigation across all pages, with native anchors, active markers and conditional contact sections.

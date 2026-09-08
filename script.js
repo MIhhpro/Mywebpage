@@ -1,5 +1,7 @@
 // ── Ambient pointer ──────────────────────────────────────────
 const root = document.documentElement;
+const isEnglish = root.lang === "en";
+const localText = (hu, en) => isEnglish ? en : hu;
 const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
 const scrollBehavior = () => reducedMotion.matches ? "auto" : "smooth";
 if (matchMedia("(hover: hover) and (pointer: fine)").matches) {
@@ -37,7 +39,9 @@ if (burger && mobileMenu) {
   const setMenu = (open, returnFocus = false) => {
     burger.classList.toggle("open", open);
     burger.setAttribute("aria-expanded", String(open));
-    burger.setAttribute("aria-label", open ? "Menü bezárása" : "Menü megnyitása");
+    burger.setAttribute("aria-label", document.documentElement.lang === "en"
+      ? (open ? "Close menu" : "Open menu")
+      : (open ? "Menü bezárása" : "Menü megnyitása"));
     mobileMenu.classList.toggle("open", open);
     document.body.style.overflow = open ? "hidden" : "";
     document.querySelectorAll("main, .site-footer").forEach(el => { el.inert = open; });
@@ -99,7 +103,7 @@ if ("IntersectionObserver" in window) {
 (function scrollTopBtn() {
   const btn = document.createElement("button");
   btn.className = "scroll-top";
-  btn.setAttribute("aria-label", "Vissza az oldal tetejére");
+  btn.setAttribute("aria-label", document.documentElement.lang === "en" ? "Back to top" : "Vissza az oldal tetejére");
   btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14"/><path d="m18 13-6-6-6 6"/><path d="M12 7v14"/></svg>';
   document.body.appendChild(btn);
 
@@ -149,14 +153,14 @@ const copyText = async (value) => {
 const copyEmailButton = document.querySelector(".js-copy-email");
 if (copyEmailButton) {
   const copyEmailLabel = copyEmailButton.querySelector(".js-copy-email-label");
-  const defaultCopyLabel = copyEmailLabel?.textContent || "Cím másolása";
+  const defaultCopyLabel = copyEmailLabel?.textContent || localText("Cím másolása", "Copy email address");
 
   copyEmailButton.addEventListener("click", async () => {
     const email = copyEmailButton.dataset.email || "";
     if (!email) return;
     const copied = await copyText(email);
 
-    if (copyEmailLabel) copyEmailLabel.textContent = copied ? "Email cím másolva ✓" : "Jelöld ki és másold a fenti címet.";
+    if (copyEmailLabel) copyEmailLabel.textContent = copied ? localText("Email cím másolva ✓", "Email address copied ✓") : localText("Jelöld ki és másold a fenti címet.", "Select and copy the address above.");
     copyEmailButton.classList.toggle("is-copied", copied);
 
     window.setTimeout(() => {
@@ -169,14 +173,14 @@ if (copyEmailButton) {
 const inquiryCopyButton = document.querySelector("#inquiry-copy-button");
 if (inquiryCopyButton) {
   const inquiryCopyLabel = inquiryCopyButton.querySelector(".js-inquiry-copy-label");
-  const defaultInquiryLabel = inquiryCopyLabel?.textContent || "Megkeresés másolása";
+  const defaultInquiryLabel = inquiryCopyLabel?.textContent || localText("Megkeresés másolása", "Copy enquiry");
 
   inquiryCopyButton.addEventListener("click", async () => {
     const content = inquiryCopyButton.dataset.copyText || "";
     if (!content) return;
     const copied = await copyText(content);
 
-    if (inquiryCopyLabel) inquiryCopyLabel.textContent = copied ? "Megkeresés másolva" : "Másolás sikertelen";
+    if (inquiryCopyLabel) inquiryCopyLabel.textContent = copied ? localText("Megkeresés másolva", "Enquiry copied") : localText("Másolás sikertelen", "Could not copy");
     inquiryCopyButton.classList.toggle("is-copied", copied);
 
     window.setTimeout(() => {
@@ -367,16 +371,16 @@ if (contactForm) {
     const usesCalendar = APPOINTMENT_SERVICES.has(serviceKey);
     if (routeNote) routeNote.hidden = Boolean(serviceKey) && !usesCalendar;
     if (!serviceKey) {
-      if (routeNote) routeNote.textContent = "Válaszd az ingyenes konzultációt, ha még nem tudod, melyik edzésforma illene hozzád.";
-      if (routeSubmit) routeSubmit.textContent = "Tovább";
+      if (routeNote) routeNote.textContent = localText("Válaszd az ingyenes konzultációt, ha még nem tudod, melyik edzésforma illene hozzád.", "Choose the free consultation if you’re not sure which training option would suit you.");
+      if (routeSubmit) routeSubmit.textContent = localText("Tovább", "Continue");
       return;
     }
     if (routeNote) {
       routeNote.textContent = usesCalendar
-        ? "A következő lépésben időpontot választasz és megerősíted a foglalást a Calendly naptárában."
+        ? localText("A következő lépésben időpontot választasz és megerősíted a foglalást a Calendly naptárában.", "Next, choose a time and confirm your booking in the Calendly calendar.")
         : "";
     }
-    if (routeSubmit) routeSubmit.textContent = usesCalendar ? "Tovább az időpontokhoz" : "Tovább az üzenethez";
+    if (routeSubmit) routeSubmit.textContent = usesCalendar ? localText("Tovább az időpontokhoz", "Choose a time") : localText("Tovább az üzenethez", "Prepare enquiry");
   };
 
   serviceSelect?.addEventListener("change", () => { invalidateBooking(); updateRouteHint(); });
@@ -402,6 +406,7 @@ if (contactForm) {
     const serviceLabel = packageLabel ? `${baseServiceLabel} – ${packageLabel}` : baseServiceLabel;
     const firstName = contactForm.querySelector("#fname")?.value?.trim() || "";
     const lastName = contactForm.querySelector("#lname")?.value?.trim() || "";
+    const fullName = (isEnglish ? `${firstName} ${lastName}` : `${lastName} ${firstName}`).trim();
     const email = contactForm.querySelector("#email")?.value?.trim() || "";
     const phone = contactForm.querySelector("#phone")?.value?.trim() || "";
     const message = contactForm.querySelector("#message")?.value?.trim() || "";
@@ -422,14 +427,14 @@ if (contactForm) {
       const inquiryCopyButton = document.querySelector("#inquiry-copy-button");
       if (inquiryServiceName) inquiryServiceName.textContent = serviceLabel;
       if (inquiryEmailLink) {
-        const subject = `${serviceLabel} – weboldali érdeklődés`;
+        const subject = `${serviceLabel} – ${localText("weboldali érdeklődés", "website enquiry")}`;
         const body = [
-          `Név: ${lastName} ${firstName}`.trim(),
+          `${localText("Név", "Name")}: ${fullName}`.trim(),
           `Email: ${email}`,
-          `Telefon: ${phone || "nincs megadva"}`,
-          `Szolgáltatás: ${serviceLabel}`,
+          `${localText("Telefon", "Phone")}: ${phone || localText("nincs megadva", "not provided")}`,
+          `${localText("Szolgáltatás", "Service")}: ${serviceLabel}`,
           "",
-          message || "Ide írhatod a kérdésedet."
+          message || localText("Ide írhatod a kérdésedet.", "Write your question here.")
         ].join("\n");
         const gmailUrl = new URL("https://mail.google.com/mail/");
         gmailUrl.searchParams.set("view", "cm");
@@ -441,8 +446,8 @@ if (contactForm) {
 
         if (inquiryCopyButton) {
           inquiryCopyButton.dataset.copyText = [
-            `Címzett: ${INQUIRY_EMAIL}`,
-            `Tárgy: ${subject}`,
+            `${localText("Címzett", "To")}: ${INQUIRY_EMAIL}`,
+            `${localText("Tárgy", "Subject")}: ${subject}`,
             "",
             body
           ].join("\n");
@@ -470,13 +475,13 @@ if (contactForm) {
       if (!embed) throw new Error("Missing calendar container");
       // All three live events have one free-text invitee question (a1).
       const bookingNotes = [
-        `Szolgáltatás: ${serviceLabel}`,
-        `Telefon: ${phone || "nincs megadva"}`,
+        `${localText("Szolgáltatás", "Service")}: ${serviceLabel}`,
+        `${localText("Telefon", "Phone")}: ${phone || localText("nincs megadva", "not provided")}`,
         "",
-        message ? `Üzenet: ${message}` : ""
+        message ? `${localText("Üzenet", "Message")}: ${message}` : ""
       ].join("\n").trim();
       const prefill = {
-        name: `${lastName} ${firstName}`.trim(),
+        name: fullName,
         firstName,
         lastName,
         email,
@@ -505,7 +510,7 @@ if (contactForm) {
         utmCampaign: serviceKey
       }
       });
-      embed.querySelector("iframe")?.setAttribute("title", `${serviceLabel} – időpontfoglalás`);
+      embed.querySelector("iframe")?.setAttribute("title", `${serviceLabel} – ${localText("időpontfoglalás", "appointment booking")}`);
       readyTimer = setTimeout(() => {
         if (requestId !== bookingRequest) return;
         if (loading) loading.hidden = true;
@@ -606,13 +611,13 @@ if (contactForm) {
     previousBodyOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
-    const customNote = item.getAttribute("data-note") || item.querySelector(".gallery-caption")?.textContent || "Egy pillanat a mindennapokból.";
+    const customNote = item.getAttribute("data-note") || item.querySelector(".gallery-caption")?.textContent || localText("Egy pillanat a mindennapokból.", "A moment from everyday life.");
     const overlay = document.createElement("div");
     overlay.className = "gallery-modal";
     overlay.innerHTML = `
       <div class="gallery-modal-backdrop" data-close="true"></div>
-      <div class="gallery-modal-panel card" role="dialog" aria-modal="true" aria-label="Kiemelt galéria elem">
-        <button class="gallery-modal-close" type="button" aria-label="Bezárás">&times;</button>
+      <div class="gallery-modal-panel card" role="dialog" aria-modal="true" aria-label="${localText("Kiemelt galéria elem", "Gallery photo")}">
+        <button class="gallery-modal-close" type="button" aria-label="${localText("Bezárás", "Close")}">&times;</button>
         <div class="gallery-modal-media"></div>
         <div class="gallery-modal-copy">
           <div class="gallery-modal-note"></div>
