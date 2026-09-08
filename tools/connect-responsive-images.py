@@ -7,7 +7,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 for page in ROOT.glob('*.html'):
     source = page.read_text(encoding='utf-8')
-    if 'href="responsive.css"' not in source:
+    if not re.search(r'href="responsive\.css(?:\?[^\"]*)?"', source):
         source = source.replace('<link rel="stylesheet" href="section-nav.css" />', '<link rel="stylesheet" href="section-nav.css" />\n  <link rel="stylesheet" href="responsive.css" />')
     source = source.replace('content="width=device-width, initial-scale=1.0"', 'content="width=device-width, initial-scale=1.0, viewport-fit=cover"')
     def update(match):

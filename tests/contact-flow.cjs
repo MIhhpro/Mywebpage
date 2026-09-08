@@ -23,7 +23,7 @@ class Element {
   focus() { this.focused = true; }
   fire(type) { return this.handlers[type]?.({ preventDefault() {} }); }
 }
-function setup(service, calendar = true) {
+function setup(service, calendar = true, language = 'hu') {
   const form = new Element(), select = new Element();
   Object.defineProperty(select, 'selectedOptions', {get: () => [{textContent: select.value}]});
   form.reportValidity = () => true;
@@ -43,6 +43,7 @@ function setup(service, calendar = true) {
   for(const selector of ['.calendly-section','.inquiry-section','#calendly-embed','#calendly-config-notice','#calendly-loading','#calendly-direct-link','#selected-service-badge','#inquiry-service-name','#inquiry-email-link','#inquiry-copy-button','.form-success','.calendly-shell']) nodes[selector] = new Element();
   nodes['.calendly-section'].children.h2 = new Element(); nodes['.inquiry-section'].children.h2 = new Element();
   const root = new Element(), body = new Element(); body.appendChild = () => {};
+  root.lang = language;
   const documentListeners = {};
   const scripts = [];
   const timers = new Map(); let timerId = 0;

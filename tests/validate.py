@@ -29,13 +29,15 @@ for name, doc in pages.items():
     if len(ids) != len(set(ids)): errors.append(f'{name}: duplicate IDs')
     assert len(doc.xpath('//h1')) == 1, name
     assert len(doc.xpath('//main')) == 1, name
-    assert doc.get('lang') == 'hu', name
+    assert doc.get('lang') == ('en' if name.endswith('-en.html') or name == 'terms.html' else 'hu'), name
     assert doc.xpath('//title/text()') and doc.xpath('//meta[@name="description"]/@content'), name
+    assert doc.xpath('//footer//a[@href="aszf.html"]') and doc.xpath('//footer//a[@href="terms.html"]'), (name, 'bilingual terms links')
     for el in doc.xpath('//*[@aria-labelledby or @aria-describedby or @aria-controls]'):
         for attr in ('aria-labelledby', 'aria-describedby', 'aria-controls'):
             for target in el.get(attr, '').split():
                 if target not in ids: errors.append(f'{name}: missing {attr} target {target}')
     for el in doc.xpath('//*[@href or @src]'):
+        if el.tag == 'base': continue  # A URL base is a directory, not a file.
         uri = urlsplit(el.get('href') or el.get('src'))
         if uri.scheme or uri.netloc: continue
         target = unquote(uri.path) or name
@@ -53,8 +55,13 @@ for name, doc in pages.items():
             image_path, descriptor = candidate.strip().split()
             assert (ROOT / image_path).is_file() and re.fullmatch(r'\d+w', descriptor), (name, candidate)
         assert (ROOT / photo.get('data-full-src')).is_file(), (name, 'full image link')
-    assert doc.xpath('//link[@href="responsive.css"]'), (name, 'device stylesheet')
+    assert any(urlsplit(href).path == 'responsive.css' for href in doc.xpath('//link[@rel="stylesheet"]/@href')), (name, 'device stylesheet')
     index = doc.xpath('//main/nav[@class="section-nav"]')
+    if name in ('404.html', '404-en.html'):
+        assert not index, 'A recovery page does not need a section index'
+        assert doc.xpath('//base/@href') == ['/'], 'Nested error paths must resolve to the site root'
+        assert doc.xpath('//meta[@name="robots"]/@content') == ['noindex']
+        continue
     assert len(index) == 1, (name, 'missing section index inside main')
     indexed = index[0].xpath('.//a/@href')
     sections = doc.xpath('//main/section')
